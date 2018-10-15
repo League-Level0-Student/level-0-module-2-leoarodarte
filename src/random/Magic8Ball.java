@@ -1,35 +1,51 @@
 //    Copyright (c) The League of Amazing Programmers 2013-2018
 //    Level 0
 
-
 package random;
 
 import java.util.Random;
 
+import javax.swing.JOptionPane;
+
 public class Magic8Ball {
 
 	// 1. Make a main method that includes all the steps below….
+	public static void main(String[] args) {
 
-	// 2. Make a variable that will hold a random number and put a random number into this variable using "new Random().nextInt(4)"
+		// 2. Make a variable that will hold a random number and put a random number
+		// into this variable using "new Random().nextInt(4)"
+		Random randy = new Random();
+		int cheeseburgers = randy.nextInt(4);
+		// 3. Print out this variable
+		System.out.println(cheeseburgers);
+		// 4. Get the user to enter a question for the 8 ball
+		JOptionPane.showInputDialog("Enter a yes or no question.");
+		// 5. If the random number is 0
+		if (cheeseburgers == 0) {
+			JOptionPane.showMessageDialog(null, "Yes!");
+		} else {
 
-	// 3. Print out this variable
+		}
+		// -- tell the user "Yes"
 
-	// 4. Get the user to enter a question for the 8 ball
+		// 6. If the random number is 1
+		if (cheeseburgers == 1) {
+			JOptionPane.showMessageDialog(null, "No!");
+		} else {
 
-	// 5. If the random number is 0
+		}
 
-	// -- tell the user "Yes"
+		// -- tell the user "No"
 
-	// 6. If the random number is 1
+		// 7. If the random number is 2
+		if (cheeseburgers == 2) {
+			JOptionPane.showMessageDialog(null, "Maybe you should ask google!");
+		} else {
+		}
+		// -- tell the user "Maybe you should ask Google?"
 
-	// -- tell the user "No"
+		// 8. If the random number is 3
 
-	// 7. If the random number is 2
-
-	// -- tell the user "Maybe you should ask Google?"
-
-	// 8. If the random number is 3
-
-	// -- write your own answer
-
+		// -- write your own answer
+	}
 }
